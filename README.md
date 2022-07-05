@@ -26,7 +26,8 @@
    3. ボタンについて
       1. 開くボタン（アセット確認画面）・編集ボタン（編集画面）・ダウンロードボタン（即ダウンロード）
    4. イメージ図
-      1. [![アセット一覧イメージ図](./src/Desktop.png)](https://www.figma.com/proto/JkvCZGMyVh4pMD01SV37ai/ra-assets-share?node-id=2%3A2&scaling=min-zoom&page-id=0%3A1)
+      1. [![アセット一覧イメージ図](./src/Desktop.png)](./src/Desktop.png)
+      2. [Figma](https://www.figma.com/proto/JkvCZGMyVh4pMD01SV37ai/ra-assets-share?node-id=2%3A2&scaling=min-zoom&page-id=0%3A1)
 3. アセット確認画面
    1. アセット一覧で表示していたカードの大きい版
 4. 編集画面
