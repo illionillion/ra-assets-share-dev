@@ -1,50 +1,37 @@
 # ER図
 
-## ユーザーとアセット
-
 ```mermaid
 erDiagram
 
 users ||--o{ assets: "1 : n"
+users ||--|{ user_authorities: ""
+authorities ||--|{ user_authorities: ""
 
 assets {
     number id PK ""
-    string assetName "アセット名"
-    string fileName  "ファイル名(UK)"
+    string asset_name "アセット名"
+    string file_name  "ファイル名(UK)"
     string description "概要・説明"
-    number contributorId FK "投稿者ID"
+    number user_id FK "ユーザーID"
 }
 
 users {
-    number userId PK "ユーザーID"
-    string userName "ユーザー名"
-    string userEmail "メールアドレス"
+    number user_id PK "ユーザーID"
+    string user_name "ユーザー名"
+    string user_email "メールアドレス"
     string password "パスワード"
-    number authorityId FK "権限ID"
+    number authority_id FK "権限ID"
 }
 
-```
-
-## ユーザーと権限
-
-```mermaid
-erDiagram
-
-users ||--o{ authoritys: "1 : n"
-
-
-users {
-    number userId PK "ユーザーID"
-    string userName "ユーザー名"
-    string userEmail "メールアドレス"
-    string password "パスワード"
-    number authorityId FK "権限ID"
-}
-
-authoritys {
-    number authorityId PK "権限ID"
-    string authorityName "権限"
+authorities {
+    number authority_id PK "権限ID"
+    string authority_name "権限"
     string description "概要・説明"
+}
+
+user_authorities {
+    number user_id PK 
+    number authorities_id PK 
 }
 
 ```
