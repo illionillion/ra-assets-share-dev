@@ -20,7 +20,6 @@ users {
     string name "ユーザー名"
     string email "メールアドレス"
     string password "パスワード"
-    number authorities_id FK "権限ID"
 }
 
 authorities {
