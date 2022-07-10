@@ -18,6 +18,7 @@ assets {
 users {
     number userId PK "ユーザーID"
     string userName "ユーザー名"
+    string userEmail "メールアドレス"
     string password "パスワード"
     number authorityId FK "権限ID"
 }
@@ -35,6 +36,7 @@ users ||--o{ authoritys: "1 : n"
 users {
     number userId PK "ユーザーID"
     string userName "ユーザー名"
+    string userEmail "メールアドレス"
     string password "パスワード"
     number authorityId FK "権限ID"
 }
