@@ -16,22 +16,22 @@ assets {
 }
 
 users {
-    number user_id PK "ユーザーID"
-    string user_name "ユーザー名"
-    string user_email "メールアドレス"
+    number id PK "ユーザーID"
+    string name "ユーザー名"
+    string email "メールアドレス"
     string password "パスワード"
-    number authority_id FK "権限ID"
+    number authorities_id FK "権限ID"
 }
 
 authorities {
-    number authority_id PK "権限ID"
-    string authority_name "権限"
+    number id PK "権限ID"
+    string name "権限"
     string description "概要・説明"
 }
 
 user_authorities {
-    number user_id PK 
-    number authorities_id PK 
+    number user_id PK "ユーザーID"
+    number authorities_id PK "権限ID"
 }
 
 ```
