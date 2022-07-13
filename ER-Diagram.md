@@ -12,6 +12,7 @@ assets {
     string asset_name "アセット名"
     string file_name  "ファイル名(UK)"
     string description "概要・説明"
+    string category "カテゴリー"
     number user_id FK "ユーザーID"
 }
 
